@@ -1,8 +1,15 @@
+const inputTugas = document.querySelector("#tugas");
+const inputUts = document.querySelector("#uts");
+const inputUas = document.querySelector("#uas");
+
+const tombol = document.querySelector("#hitung");
+const hasil = document.querySelector("#hasil");
+
 const hitungRataRata = (tugas, uts, uas) => {
   return (tugas + uts + uas) / 3;
 };
 
-const predikat = (rataRata) => {
+function predikat(rataRata) {
   if (rataRata >= 90) {
     return "A";
   } else if (rataRata >= 80) {
@@ -17,7 +24,7 @@ const predikat = (rataRata) => {
 };
 
 const form = document.getElementById("form");
-const result = document.getElementById("result");
+const result = document.getElementById("hasil");
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();

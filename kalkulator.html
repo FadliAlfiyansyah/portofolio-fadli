@@ -3,36 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kalkulator Nilai</title>
+  <title>Fadli Alfiyansyah | Kontak</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  <h1>Kalkulator Nilai</h1>
-
-  <form id="form">
-
-    <div>
-      <label for="tugas">Nilai Tugas:</label>
-      <input type="number" id="tugas" name="tugas" min="0" max="100" required>
+  <header>
+    <div class="container navbar">
+      <h1>Fadli Alfiyansyah</h1>
+      <nav class="menu-laptop">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="proyek.html">Proyek</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+          <li><a href="kalkulator.html">kalkulator nilai</a></li>
+        </ul>
+      </nav>
+      
+      <details class="menu-ponsel">
+        <summary>Menu</summary>
+        <nav>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="proyek.html">Proyek</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+            <li><a href="kalkulator.html">kalkulator nilai</a></li>
+          </ul>
+        </nav>
+      </details>
     </div>
+  </header>
 
-    <div>
-      <label for="uts">Nilai UTS:</label>
-      <input type="number" id="uts" name="uts" min="0" max="100" required>
-    </div>
+  <main>
+    <div class="container">
+      <section class="kartu">
+        <h2>KALKULATOR NILAI</h2>
+        <p>Masukkan nilai tugas, UTS, dan UAS lalu tekan tombol Hitung Nilai</p>
 
-    <div>
-      <label for="uas">Nilai UAS:</label>
-      <input type="number" id="uas" name="uas" min="0" max="100" required>
-    </div>
+        <form id="form">
+          <p>
+            <label for="nama">Nilai Tugas</label><br>
+            <input type="number" id="tugas" name="tugas" placeholder="Contoh : 90" required>
+          </p>
+          <p>
+            <label for="email">Nilai UTS</label><br>
+            <input type="number" id="uts" name="uts" placeholder="Contoh : 80" required>
+          </p>
+          <p>
+            <label for="hp">Nilai UAS</label><br>
+            <input type="number" id="uas" name="uas" placeholder="Contoh : 70" required>
+          </p>
+          
+          <button type="submit" id="hitung">Hitung Nilai</button>
 
-    <button type="submit">Hitung</button>
+            <p id="hasil"></p>
 
-  </form>
+        </form>
+      </section>
 
-  <p id="result"></p>
+  <footer>
+    <p>Kontak: <a href="mailto:Fadlitugasrplsmkn1@gmail.com">fadlitugasrplsmkn1@gmail.com</a> |
+      <a href="https://github.com/" target="_blank">GitHub</a> |
+      <a href="https://www.youtube.com/" target="_blank">YouTube</a></p>
+    <p>&copy; 2026 Fadli Alfiyansyah. Dibuat di Kelas Industri UBIG.</p>
+  </footer>
 
-  <script src="js/kalkulator.js" defer></script>
-
+  <script src="Js/kalkulator.js"></script>
 </body>
 </html>
