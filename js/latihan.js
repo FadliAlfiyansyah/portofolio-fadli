@@ -26,9 +26,11 @@ return "A";
 return "B";
 } else if (nilai >= 70) {
 return "C";
-} else {
-return "D";
-}
+} else if (nilai >= 60) {
+    return "D";
+  } else {
+    return "E";
+  }
 }
 function rapor(namaSiswa, tugas, uts, uas) {
 const rata = hitungRataRata(tugas, uts, uas);
