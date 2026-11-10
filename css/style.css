@@ -332,23 +332,29 @@ body.gelap {
 
 .filter-proyek button {
   padding: 10px 20px;
-  border: none;
+  border: 1px solid #DDDDDD;
   border-radius: 8px;
-  background-color: #2563eb;
-  color: white;
+  background-color: #FFFFFF;
+  color: #333333;
   font-family: inherit;
   font-weight: 600;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.3s ease;
+}
+
+.filter-proyek button.aktif {
+  background-color: #E63946;
+  color: #FFFFFF;
+  border-color: #E63946;
 }
 
 .filter-proyek button:hover {
-  background-color: #1d4ed8;
+  border-color: #E63946;
   transform: translateY(-2px);
 }
 
 .filter-proyek button:focus-visible {
-  outline: 3px solid #93c5fd;
+  outline: 3px solid #E63946;
   outline-offset: 3px;
 }
 

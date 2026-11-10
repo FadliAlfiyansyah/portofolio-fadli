@@ -1,4 +1,3 @@
-
 // 1. Daftar keahlian
 const skills = [
   { nama: "HTML", level: "Menengah" },
@@ -126,6 +125,14 @@ function pasangFilter(idTombol, kategori) {
   if (!tombol) return;
 
   tombol.addEventListener("click", () => {
+
+    document.querySelectorAll(".filter-proyek button")
+      .forEach((item) => {
+        item.classList.remove("aktif");
+      });
+
+    tombol.classList.add("aktif");
+
     if (kategori === "Semua") {
       tampilkanProyek(proyek);
     } else {
@@ -139,7 +146,8 @@ function pasangFilter(idTombol, kategori) {
 // Jalankan hanya jika berada di halaman proyek
 if (daftarProyek && jumlahProyek) {
   tampilkanProyek(proyek);
-
   pasangFilter("#filter-semua", "Semua");
+  pasangFilter("#filter-html", "Html");
+  pasangFilter("#filter-css", "Css");
   pasangFilter("#filter-javascript", "Javascript");
-}
+  }
