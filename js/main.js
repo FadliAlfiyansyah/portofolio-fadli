@@ -49,10 +49,15 @@ const kotakPesan = document.querySelector("#pesan");
 const hitungKarakter = document.querySelector("#hitung-karakter");
 
 if (kotakPesan && hitungKarakter) {
+
+  hitungKarakter.textContent =
+    `${kotakPesan.value.length}/300 karakter`;
+
   kotakPesan.addEventListener("input", () => {
     hitungKarakter.textContent =
       `${kotakPesan.value.length}/300 karakter`;
   });
+
 }
 
 // 4. Daftar proyek dan filter - halaman proyek

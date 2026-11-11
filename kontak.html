@@ -71,7 +71,17 @@
           </p>
           <p>
             <label for="pesan">Pesan</label><br>
-            <textarea id="pesan" name="pesan" rows="5" cols="40" placeholder="Tulis pesanmu di sini" required></textarea>
+            <textarea
+              id="pesan"
+              name="pesan"
+              rows="5"
+              cols="40"
+              maxlength="300"
+              placeholder="Tulis pesanmu di sini"
+              required>
+           </textarea>
+
+<p id="hitung-karakter">0/300 karakter</p>
           </p>
           <button type="submit">Kirim Pesan</button>
         </form>
