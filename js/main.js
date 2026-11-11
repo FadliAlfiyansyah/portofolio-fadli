@@ -24,17 +24,24 @@ if (daftarSkill && jumlahSkill) {
 
 // 2. Tema gelap - semua halaman
 const tombolTema = document.querySelector("#tombol-tema");
-
 if (tombolTema) {
+  if (localStorage.getItem("tema") === "gelap") {
+    document.body.classList.add("gelap");
+    tombolTema.textContent = "Mode Terang";
+  } else { 
+    tombolTema.textContent = "Mode Gelap";
+  }
+
   tombolTema.addEventListener("click", () => {
     document.body.classList.toggle("gelap");
-
     if (document.body.classList.contains("gelap")) {
-      tombolTema.textContent = "Mode Terang";
+      localStorage.setItem("tema", "gelap");
+    tombolTema.textContent = "Mode Terang";
     } else {
+      localStorage.setItem("tema", "terang");
       tombolTema.textContent = "Mode Gelap";
-    }
-  });
+      }
+    });
 }
 
 // 3. Penghitung karakter pesan - halaman kontak
