@@ -20,7 +20,7 @@ img {
 :root {
   --warna-utama: #1D3557;
   --warna-judul: #1D3557;
-  --warna-tautan: #E63946;
+  --warna-tautan: #B42332;
   --warna-latar: #F1FAEE;
   --warna-teks: #333333;
   --warna-kartu: #FFFFFF;
@@ -174,6 +174,10 @@ main {
   margin-bottom: 0;
 }
 
+#daftar-proyek {
+  min-height: 30rem;
+}
+
 article img {
   border-radius: 8px;
   border: 1px solid #DDDDDD;
@@ -298,7 +302,7 @@ body.gelap {
   --warna-latar: #121A24;
   --warna-teks: #E3E8EE;
   --warna-kartu: #1C2836;
-  --warna-garis: #34465A;
+  --warna-garis: #526477;
 }
 /* keterangan karakter kontak */
 .keterangan {
@@ -362,4 +366,18 @@ body.gelap {
   margin-bottom: 20px;
   font-size: 14px;
   color: var(--warna-teks);
+}
+/* 12. tombol atas */
+.tombol-atas {
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  margin-top: 16px;
+  padding: 8px 16px;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.tombol-atas:hover {
+  background-color: rgba(255, 255, 255, 0.15);
 }

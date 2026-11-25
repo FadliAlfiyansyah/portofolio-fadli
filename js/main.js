@@ -117,7 +117,7 @@ function buatKartu(item) {
     <article class="kartu">
       <span class="label">${item.kategori}</span>
       <h3>${item.judul}</h3>
-      <img src="${item.gambar}" alt="${item.alt}" width="280">
+      <img src="${item.gambar}" alt="${item.alt}" width="280" height="184">
       <p>${item.deskripsi}</p>
     </article>
   `;
@@ -239,4 +239,14 @@ async function ambilRepo() {
 
 if (daftarRepo && statusRepo) {
     ambilRepo();
+}
+// tombol ke atas
+const tombolAtas = document.querySelector("#tombol-atas");
+if (tombolAtas){
+  tombolAtas.addEventListener("click", function () {
+    window.scrollTo({ 
+      top: 0, 
+      behavior: "smooth" 
+    });
+  });
 }

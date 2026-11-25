@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fadli Alfiyansyah | Kontak</title>
+  <title>Fadli Alfiyansyah | Kalkulator Nilai</title>
+  <link rel="icon" href="img/Fadli.jpeg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
@@ -49,18 +50,19 @@
         <form id="form">
           <p>
             <label for="nama">Nilai Tugas</label><br>
-            <input type="number" id="tugas" name="tugas" placeholder="Contoh : 90" required>
+            <input type="number" id="tugas" name="tugas" placeholder="Contoh : 90" min="0" max="100" required>
           </p>
           <p>
             <label for="email">Nilai UTS</label><br>
-            <input type="number" id="uts" name="uts" placeholder="Contoh : 80" required>
+            <input type="number" id="uts" name="uts" placeholder="Contoh : 80" min="0" max="100" required>
           </p>
           <p>
             <label for="hp">Nilai UAS</label><br>
-            <input type="number" id="uas" name="uas" placeholder="Contoh : 70" required>
+            <input type="number" id="uas" name="uas" placeholder="Contoh : 70" min="0" max="100" required>
           </p>
           
           <button type="submit" id="hitung">Hitung Nilai</button>
+           <p id="hasil" aria-live="polite"></p>
 
             <p id="hasil"></p>
 
@@ -73,6 +75,8 @@
       <a href="https://github.com/" target="_blank">GitHub</a> |
       <a href="https://www.youtube.com/" target="_blank">YouTube</a></p>
     <p>&copy; 2026 Fadli Alfiyansyah. Dibuat di Kelas Industri UBIG.</p>
+
+    <button id="tombol-atas" class="tombol-atas">Kembali ke Atas</button>
   </footer>
 
   <script src="js/kalkulator.js"></script>
