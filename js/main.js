@@ -113,11 +113,13 @@ async function muatProyek() {
 }
 
 function buatKartu(item) {
+   const gambarLCP = item.gambar.includes("proyek-kontak.png");
+
   return `
     <article class="kartu">
       <span class="label">${item.kategori}</span>
       <h3>${item.judul}</h3>
-      <img src="${item.gambar}" alt="${item.alt}" width="280" height="184">
+      <img src="${item.gambar}" alt="${item.alt}" width="280" height="184" ${gambarLCP ? 'fetchpriority="high"' : 'loading="lazy"'}>
       <p>${item.deskripsi}</p>
     </article>
   `;
