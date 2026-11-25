@@ -113,7 +113,7 @@ async function muatProyek() {
 }
 
 function buatKartu(item) {
-   const gambarLCP = item.gambar.includes("proyek-kontak.png");
+   const gambarLCP = item.gambar.includes("proyek-profil.png");
 
   return `
     <article class="kartu">
